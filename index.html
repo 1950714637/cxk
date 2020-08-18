@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林柯的个人简历</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a href="#" class="logo fl" alt='logo'>
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+
+            <nav class="fr">
+                <ul class="clearfix">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- banner区域 -->
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+
+    <main style="margin-top:-340px;">
+        <div class="userCard">
+
+            <div class="pictureAndTtext clearfix">
+
+                <div class="picture">
+                    <img src="./images/avatar.jpg" alt="头像" width="299" height="347">
+                </div>
+
+                <div class="text">
+                    <span class="welcome">hello
+                        <span class="triangle"></span>
+                    </span>
+
+                    <h1>林柯</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>18</dd>
+                        <dt>所在城市</dt>
+                        <dd>温州</dd>
+                        <dt>邮箱</dt>
+                        <dd>1583124118@qq.com</dd>
+                        <dt>手机</dt>
+                        <dd>13250895812</dd>
+                    </dl>
+                </div>
+
+            </div>
+
+            <footer class="media"></footer>
+        </div>
+        <!-- pdf区域 -->
+        <p class="downloadResume-wrapper">
+            <a href="" class="downloadResume">
+                下载 PDF 简历
+            </a>
+
+        <p class="selfIntroduction">
+            林柯
+            资深前端工程师，资深前端讲师，现在在 乌拉圭
+            教前端课程。
+            <br> 技能：前端开发，Rails 开发，Node.js 开发
+        </p>
+        </p>
+    </main>
+
+    <!-- 技能区域 -->
+    <section class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 10%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Node.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 10%;"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <!-- 作品集区域 -->
+    <section class="portfolio">
+        <h2>作品集</h2>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生js&amp;css</li>
+            </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+    </section>
+
+</body>
+
+</html>
+<script>
+    window.onload = function () {
+        portfolio1.onclick = function () {
+            portfolioBar.className = 'bar state-1'
+        }
+        portfolio2.onclick = function () {
+            portfolioBar.className = 'bar state-2'
+        }
+        portfolio3.onclick = function () {
+            portfolioBar.className = 'bar state-3'
+        }
+    }
+</script>
